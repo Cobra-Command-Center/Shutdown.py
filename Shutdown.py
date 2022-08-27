@@ -5,7 +5,7 @@ import os
 # Obtains Computer Hostname, Designate Shell Environment, Establishes Command
 hostname = socket.gethostname()
 shell = "powershell.exe"
-command = "Stop-Computer -ComputerName " + hostname + "-Force"
+command = "Stop-Computer -ComputerName " + hostname + " -Force"
 
 # Executes PowerShell command Stop-Computer -ComputerName [ hostname ] -Force
 os.system(shell + " " + command)
